@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ursine</title>
+    <style>
+      body {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="benchmark.js"></script>
+
+
+    <div style="display: flex; justify-content: space-between">
+      <div>
+        <strong>Renderer</strong>
+
+        <input id="canvas" type="radio" name="renderer" value="canvas" checked="true" />
+        <label for="canvas">Canvas</label>
+
+        <input id="webgl" type="radio" name="renderer" value="webgl" />
+        <label for="webgl">WebGL</label>
+      </div>
+      <div>
+        <button id="pause">Pause</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="canvas-root"></div>
+    <div id="webgl-root"></div>
+
+    <hr />
+
+  </body>
+</html>
